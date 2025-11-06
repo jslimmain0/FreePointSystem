@@ -1,0 +1,10 @@
+package me.jslim.point.application.dto;
+
+import jakarta.validation.constraints.NotNull;
+
+public record UseCancelCmd(
+        @NotNull String userId,
+        @NotNull String pointKey,
+        @NotNull Long useCancelAmount
+) {
+}
