@@ -202,11 +202,9 @@
 ```bash
 # (CLI) 일반적인 실행 예시
 ./gradlew clean bootRun
-# 또는 패키징
-./gradlew clean build
-java -jar build/libs/PointSystem-1.0.0.jar
+# 테스트코드 확인
+./gradlew cleanTest test --console=plain
 ```
-기본 포트: `:8080`
 
 ---  
 ## 6. 테스트
